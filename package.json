@@ -1,0 +1,25 @@
+{
+  "name": "uiv-language",
+  "displayName": "UIV",
+  "description": "Unit Informed Values syntax highlighting",
+  "version": "0.0.3",
+  "engines": { "vscode": "^1.80.0" },
+  "categories": ["Programming Languages"],
+  "contributes": {
+    "languages": [
+      {
+        "id": "uiv",
+        "aliases": ["UIV"],
+        "extensions": [".uiv"],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "uiv",
+        "scopeName": "source.uiv",
+        "path": "./syntaxes/uiv.tmLanguage.json"
+      }
+    ]
+  }
+}

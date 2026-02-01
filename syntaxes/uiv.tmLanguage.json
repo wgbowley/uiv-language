@@ -1,0 +1,61 @@
+{
+  "scopeName": "source.uiv",
+  "patterns": [
+    { "include": "#section" },
+    { "include": "#key" },
+    { "include": "#number" },
+    { "include": "#unit" },
+    { "include": "#string" },
+    { "include": "#comment" }
+  ],
+  "repository": {
+    "section": {
+      "patterns": [
+        {
+          "name": "entity.name.section.uiv",
+          "match": "\\[[A-Za-z0-9_.]+\\]"
+        }
+      ]
+    },
+    "key": {
+      "patterns": [
+        {
+          "name": "variable.other.key.uiv",
+          "match": "^[a-zA-Z_][a-zA-Z0-9_]*:"
+        }
+      ]
+    },
+    "number": {
+      "patterns": [
+        {
+          "name": "constant.numeric.uiv",
+          "match": "[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)?"
+        }
+      ]
+    },
+    "unit": {
+      "patterns": [
+        {
+          "name": "support.type.unit.uiv",
+          "match": "[knu]?\\([^\\)]+\\)"
+        }
+      ]
+    },
+    "string": {
+      "patterns": [
+        {
+          "name": "string.quoted.double.uiv",
+          "match": "\".*?\""
+        }
+      ]
+    },
+    "comment": {
+      "patterns": [
+        {
+          "name": "comment.line.uiv",
+          "match": "#.*$"
+        }
+      ]
+    }
+  }
+}
